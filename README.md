@@ -7,7 +7,7 @@ O objetivo deste projeto é desenvolver uma API para uma votação.
 Tempo Estimado: 7 dias de prazo
 
 ## Premissas
-* Deve ser feito em ECMAScript;
+* Deve ser feito em NodeJS;
 * Deverá conter um README com instruções claras de dependências;
 * Não pode haver dependência de serviços externos. A persistência dos dados pode ser feita por exemplo in-memory ou baseada em arquivos;
 * Não é necessária preocupação com autenticação dos métodos ou cadastro dos participantes;
