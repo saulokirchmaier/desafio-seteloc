@@ -1,0 +1,31 @@
+{
+  "name": "desafio-seteloc",
+  "version": "1.0.0",
+  "description": "Desafio back-end nodejs SeteLoc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saulokirchmaier/desafio-seteloc.git"
+  },
+  "author": "Saulo Kirchmaier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saulokirchmaier/desafio-seteloc/issues"
+  },
+  "homepage": "https://github.com/saulokirchmaier/desafio-seteloc#readme",
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "nodemon": "^2.0.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
