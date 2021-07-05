@@ -11,6 +11,6 @@ app.use(bodyParser.json());
 
 app.use('/vote', voteRouter);
 
-app.use('/', countRouter);
+app.use('/count', countRouter);
 
 app.listen(PORT, () => console.log(`Server online on PORT localhost:${PORT}`));
