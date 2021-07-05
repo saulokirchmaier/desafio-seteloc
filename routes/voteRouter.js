@@ -1,9 +1,9 @@
 const express = require('express');
 
+const { postVote } = require('../controllers/voteController');
+
 const voteRouter = express.Router();
 
-voteRouter.post('/', (_req, res) => {
-  res.status(200).json('Tudo certo');
-});
+voteRouter.post('/', postVote);
 
 module.exports = voteRouter;
