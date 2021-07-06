@@ -1,16 +1,25 @@
-const readFile = require('../util/readFile');
-const writeFile = require('../util/wirteFile');
+const fs = require('fs').promises;
 
-async function addNewVote(id) {
-  const participants = await readFile();
-  const voted = participants.map((participant) => (
-    (participant.id === id)
-      ? { ...participant, count: participant.count + 1 }
-      : participant));
-  await writeFile(voted);
-  return null;
+const pollFile = './poll.json';
+
+async function getParticipantsVotes() {
+  try {
+    const data = await fs.readFile(pollFile, 'utf8');
+    return JSON.parse(data);
+  } catch (err) {
+    return err;
+  }
+}
+
+async function updateParticipantsVotes(data) {
+  try {
+    return fs.writeFile(pollFile, JSON.stringify(data));
+  } catch (err) {
+    return err;
+  }
 }
 
 module.exports = {
-  addNewVote,
+  getParticipantsVotes,
+  updateParticipantsVotes,
 };

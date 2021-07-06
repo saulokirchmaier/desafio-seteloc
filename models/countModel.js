@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 
 const pollFile = './poll.json';
 
-async function readFile() {
+async function getParticipantsVotes() {
   try {
     const data = await fs.readFile(pollFile, 'utf8');
     return JSON.parse(data);
@@ -11,4 +11,6 @@ async function readFile() {
   }
 }
 
-module.exports = readFile;
+module.exports = {
+  getParticipantsVotes,
+};
