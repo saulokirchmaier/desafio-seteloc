@@ -10,6 +10,8 @@
   - [Iniciar a API](#iniciar-a-api)
   - [Utilizando a API](#utilizando-a-api)
   - [Sugestão](#sugestão)
+- [Resultado](#resultado)
+  - [Teste AB](#teste-ab)
 - [Enunciado Geral](#enunciado-geral)
   - [Premissas](#premissas)
   - [Detalhes](#detalhes)
@@ -92,7 +94,7 @@ Agora a aplicação ja esta pronta para fazer as requisições nas rotas conform
 
 Para utilizar a aplicação instale o [Insomnia](https://insomnia.rest/), ou o [HTTPie](https://httpie.io/).
 
-## Resultados
+## Resultado
 
 ### Teste AB
 
